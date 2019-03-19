@@ -10,4 +10,4 @@ class GoodReadsSpider(scrapy.Spider)
         ]
 
         for url oin urls:
-            yield scrapy.Requests(url=url, callbak=self.parse)
+            yield scrapy.Requests(url=url, callback=self.parse)
