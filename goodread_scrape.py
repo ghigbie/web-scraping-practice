@@ -20,6 +20,6 @@ class GoodReadsSpider(scrapy.Spider):
             'https://www.goodreads.com/quotes?page=12'
         ]
 
-        for url oin urls:
+        for url in urls:
             yield scrapy.Requests(url=url, callback=self.parse)
     
