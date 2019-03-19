@@ -1,6 +1,6 @@
 import scrapy
 
-class GoodReadsSpider(scrapy.Spider)
+class GoodReadsSpider(scrapy.Spider):
     name="GoodReads"
 
     def start_requests(self):
@@ -22,3 +22,4 @@ class GoodReadsSpider(scrapy.Spider)
 
         for url oin urls:
             yield scrapy.Requests(url=url, callback=self.parse)
+    
